@@ -1,0 +1,20 @@
+municipality mun1 = "Mayaguez"
+report(mun1, "Mango", power, yes)
+report(mun1, "Terrace", water, yes)
+report(mun1, "Terrace", power, yes)
+report(mun1, "Colegio", power, yes)
+report(mun1, "Colegio", water, yes)
+report(mun1, "Mani", power, no)
+report(mun1, "Mani", water, no)
+municipality mun2 = "Lares"
+report(mun2, "Piletas", power, no)
+report(mun2, "Piletas", water, yes)
+report(mun2, "Barrio Pueblo", power, yes)
+report(mun2, "Barrio Pueblo", water, yes)
+report(mun2, "Callejones", power, yes)
+analyze(mun1, water)
+analyze(mun2, power, water)
+region oeste = "Region Oeste"
+addmunicipality(oeste, mun1)
+addmunicipality(oeste, mun2)
+showstatistics(oeste)
